@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+      <form class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="username"
+          class="form-control"
+          [(ngModel)]="username"
+          required
+        />
+        <label for="post">Post</label>
+        <textarea
+          type="text"
+          name="commentBox"
+          id="post"
+          class="form-control"
+          [(ngModel)]="comment"
+          required
+        rows="5"
+          ></textarea>
+        <button class="btn btn-primary" (click)="posterClicked()">Post</button>
+      </form>
+    </div>
+  </div>

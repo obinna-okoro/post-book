@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class="container">
+
+<app-message-input (postMaker)="poster($event)"></app-message-input>
+
+  <hr />
+<app-posts *ngFor="let postEl of postLists" [aPost]="postEl"></app-posts>
+</div>
